@@ -11,7 +11,7 @@
           "text_color":"#FFFFFF"
         },
         "link": {
-          "text_color":"teal",
+          "text_color":"red",
           "opacity": 1
         }
       },
