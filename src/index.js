@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import * as allThemes from './theme/schema.json'
+import { setToLocalStorage } from './utils/storage'
 import reportWebVitals from './reportWebVitals';
+
+const Index = () => {
+  setToLocalStorage("themes", allThemes.default)
+  return (
+    <App />
+  )
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Index />
   </React.StrictMode>,
   document.getElementById('root')
 );
